@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>My Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mid mt-5 ">
+            <div class=" col-xs-12  col-sm-offset-4 col-sm-12  col-md-offset-3 col-md-6  col-lg-offset-3 col-lg-6  ">
+                <form name="form" class="container2 ">
+                    <input class=" form-control " id="panel" name="panel" placeholder="0." disabled><br />
+                    </input>
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn7" value="7"
+                        onclick="cal(bttn7.value);">
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn8" value="8"
+                        onclick="cal(bttn8.value);">
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn9" value="9"
+                        onclick="cal(bttn9.value);">
+                    <input class="form-group btn btn-default bttn opr" type="button" name="bttnplus" value="+"
+                        onclick="cal(bttnplus.value);"></br>
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn4" value="4"
+                        onclick="cal(bttn4.value);">
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn5" value="5"
+                        onclick="cal(bttn5.value);">
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn6" value="6"
+                        onclick="cal(bttn6.value);">
+                    <input class="form-group btn btn-default bttn opr" type="button" name="bttnmin" value="-"
+                        onclick="cal(bttnmin.value);"></br>
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn1" value="1"
+                        onclick="cal(bttn1.value);">
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn2" value="2"
+                        onclick="cal(bttn2.value);">
+                    <input class="form-group btn btn-default bttn" type="button" name="bttn3" value="3"
+                        onclick="cal(bttn3.value);">
+                    <input class="form-group btn btn-default bttn opr" type="button" name="bttnmulti" value="*"
+                        onclick="cal(bttnmulti.value);"></br>
+                    <input class="form-group btn btn-default bttn" type="button" name="bttndot" value="."
+                        onclick="cal(bttndot.value);">
+                    <input class="form-group btn btn-default bttn" type="button" name="bttnzero" value="0"
+                        onclick="cal(bttnzero.value);">
+                    <input class="form-group btn btn-default bttn opr" type="button" name="bttnmod" value="%"
+                        onclick="cal(bttnmod.value);">
+                    <input class="form-group btn btn-default bttn opr" type="button" name="bttndiv" value="/"
+                        onclick="cal(bttndiv.value);"></br>
+                    <input class="form-group btn btn-info bttn C bttne" type="button" name="bttnclear" value="C"
+                        onclick="C();">
+                    <input class="form-group btn btn-success bttn result bttne" type="button" name="bttnEQL" value="="
+                        onclick="panel.value=eval(panel.value);">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
